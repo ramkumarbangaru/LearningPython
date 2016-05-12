@@ -1,0 +1,9 @@
+Redo IP Validation but this time, in the main script you should have function call and create functions for IP validation and class identification
+
+
+This should be in main script and create 2 functions one for validation and another one to find class.
+
+
+If (IsIPValid(ipadd)):
+    print(IPClass(ipaddr)
+
