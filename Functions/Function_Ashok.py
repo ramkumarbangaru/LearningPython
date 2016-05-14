@@ -21,23 +21,18 @@ def IsIPValid(ipaddr):
     return (res)
 
 def IPClass(ipaddr):
-    "This function will validate the given input is valid IP or Not"
+    "This function will check the IP class"
     octets = ipaddr.split(".")
-    if octets[0].isnumeric() == True:
-        if int(octets[0])>-1 and int(octets[0])<128:
-            res = ("Given IP belongs to class A")
-        elif int(octets[0])>127 and int(octets[0])<192:
-            res = ("Given IP belongs to class B")
-        elif int(octets[0])>191 and int(octets[0])<224:
-            res = ("Given IP belongs to class C")
-        elif int(octets[0])>223 and int(octets[0])<240:
-            res = ("Given IP belongs to class D")
-        elif int(octets[0])>239 and int(octets[0])<256:
-            res = ("Given IP belongs to class E")
-        else:
-            res = ("Not a valid IP Class")
-    else:
-        res = ("Not a Valid Input")
+    if int(octets[0])>-1 and int(octets[0])<128:
+        res = ("Given IP belongs to class A")
+    elif int(octets[0])>127 and int(octets[0])<192:
+        res = ("Given IP belongs to class B")
+    elif int(octets[0])>191 and int(octets[0])<224:
+        res = ("Given IP belongs to class C")
+    elif int(octets[0])>223 and int(octets[0])<240:
+        res = ("Given IP belongs to class D")
+    elif int(octets[0])>239 and int(octets[0])<256:
+        res = ("Given IP belongs to class E")
     return (res)
 
 #This is the Main Program
