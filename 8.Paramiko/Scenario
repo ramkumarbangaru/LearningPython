@@ -1,0 +1,25 @@
+Its Time to start writing scripts which is related to our Organization - As a first step ssh to remote and execution
+basic commands.
+
+Scenario is ssh to any Linux box (Can be NMS,PP or any other linux box) and execute following commands (just execute - No Validation)
+
+Login to Linux box
+Move to su -
+
+ cd /tmp
+ ls -ltr
+ cd /root
+ ls -ltr
+
+ come out of su to local user
+
+ mkdir /tmp/test
+ cd /temp/test
+ cd ..
+ rm -rf test
+
+<try to avoid NMS, PP - we dont want to messup with any system files there - If you are using NMS, PP - do not execute rm -rf command>
+
+Some of Paramiko examples can be found here
+
+http://www.programcreek.com/python/example/4561/paramiko.SSHClient
