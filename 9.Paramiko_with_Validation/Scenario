@@ -1,0 +1,9 @@
+using Paramiko - ssh to server
+execute the command cd /tmp and ls -ltr
+in the listed files - make sure you are having the file called temp.txt
+
+if file is available print true and if not false
+
+
+Note :  Do not use os.path.isfile or os.path.exists function, do ls -ltr and try to confirm if file is there are not
+        from the results of ls -ltr
