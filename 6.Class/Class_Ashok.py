@@ -6,17 +6,26 @@
 5) Do it using class
 '''
 
+ipaddr = input("Please enter the IP address: \n ")
+print (ipaddr)
+ip = IsIPValid(ipaddr)
+print (ip.res)
 
-
-def IsIPValid():
-    ipaddr = input("Please enter the IP address: \n ")
-    for ip_oct in ipaddr.split("."):
-        if ip_oct.isnumeric() == True:
-            if int(ip_oct)>-1 and int(ip_oct)<256:
-                res = ("True")
+def IsIPValid(object):
+    """To check given IP is valid or not"""
+    def __init__(self, ipaddr):
+        self.ip = ipaddr
+    def isvalid (self, ipaddr):
+        for ip_oct in ipaddr.split("."):
+            if ip_oct.isnumeric() == True:
+                if int(ip_oct)>-1 and int(ip_oct)<256:
+                    self.res = ("True")
+                else:
+                    self.res = ("False")
+                    break
             else:
-                res = ("False")
+                self.res = ("False")
                 break
-        else:
-            res = ("False")
-            break
+    return self.res
+
+
