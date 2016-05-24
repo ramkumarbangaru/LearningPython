@@ -1,0 +1,10 @@
+Login to Linux server using Paramiko
+Go to any folder which is having many files in it
+Execute "ls" and read the value
+using Reg ex - get the date modified and file name - Store in Dictionary
+Sort the Dictionary by date modified (Asc order) - Useful link : http://pythoncentral.io/how-to-sort-python-dictionaries-by-key-or-value/
+Execute "ls -ltr" and read values
+Compare the order of the files of sorted "ls" results with ls -ltr results
+if comparision passed then print true if not print false
+
+for this scenario - try to use everything you learnt before like loops, functions, class, tryexcept
