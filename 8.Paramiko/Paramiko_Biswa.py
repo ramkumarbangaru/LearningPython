@@ -20,3 +20,4 @@ stdin, stdout,stderr = ssh.exec_command('ls -ltr')
 output = stdout.readlines()
 print('\n'.join(output))
 # stdin, stdout,stderr = ssh.exec_command('rm -rf test')
+#
