@@ -1,2 +1,1 @@
-# LearningPython
-For Friends :)
+Learning Python with Friends :)
