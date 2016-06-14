@@ -6,6 +6,8 @@
 5) Later update it to get both inputs from user
 6) Print the reuslts'''
 
+print("This program checks if the provided input is substring of first String or not" )
+
 import sys
 input_text_string = input('Please Enter the String: ')
 print('Your input String:', input_text_string)
