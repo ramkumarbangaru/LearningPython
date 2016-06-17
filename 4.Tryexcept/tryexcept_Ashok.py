@@ -6,7 +6,7 @@
 5) How to handle unknown error with unknown resolution
 '''
 
-# Below scenario works with while loop ocndition
+# Below scenario works with while loop condition
 # import sys
 # while True:
 # try:

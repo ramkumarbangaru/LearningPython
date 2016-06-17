@@ -27,11 +27,11 @@ def ipclass(ipaddr):
         res = "You have entered a class D IP Address:"+ipaddr
     elif int(oct1) >= 240 and int(oct1) < 256:
         res = "You have entered a class E IP Address:"+ipaddr
-    return(res)
+    return (res)
 
 
 if ipvalid(ipaddr) == ip:
-    ipclass(ipaddr)
+     print (ipclass(ipaddr))
 else:
     print(ip1)
 sys.exit(1)
