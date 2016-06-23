@@ -1,6 +1,7 @@
 import paramiko
 import time
 
+
 def sendxcmd(shell,cmd):
     shell.send(cmd + "\n")
     while not shell.recv_ready():
@@ -21,16 +22,19 @@ log.close()
 
 
 file1 = open("C:\\python_test\\abc.txt","r")
-list1 = file1.readline().split("\n")
+#list1 = file1.read()
+
 # list2 = list1.decode("utf-8")
 
-print(list1)
+#print(list1)
 
-# for line in list1:
-#     if line == "temp.txt":
-#         print("line")
-    # else:
-    #     print("FALSE")
+for word in (file1.read()):
+    print (word)
+   # if line == "temp.txt":
+   #  print("TRUE")
+   #  exit()
+   # else:
+   #  print("False")
 
 
 # shell.send("rm -rf test\n")
