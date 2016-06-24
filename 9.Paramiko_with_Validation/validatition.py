@@ -22,7 +22,7 @@ shell.close()
 log.close()
 
 file1 = open("C:\\python_test\\abc.txt","r")
-print(file1)
+#print(file1)
 if "temp.txt" in file1.read():
     print("TRUE")
 else:
