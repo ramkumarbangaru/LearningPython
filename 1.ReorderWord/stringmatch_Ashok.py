@@ -6,14 +6,16 @@
 5) Later update it to get both inputs from user
 6) Print the reuslts'''
 
+print("This program checks if the provided input is substring of first String or not" )
+
 import sys
 input_text_string = input('Please Enter the String: ')
 print('Your input String:', input_text_string)
-Tobecomaprestring = input('Please Enter the sub string to check part of the String: ')
+substring = input('Please Enter the sub string to check part of the String: ')
 
 for character in Tobecomaprestring:
     if Tobecomaprestring.count(character) > input_text_string.count(character):
-        print ("Is Not a Valid String")
+        print (Tobecomaprestring + " : is NOT sub string of : " +input_text_string)
         sys.exit()
 
-print (Tobecomaprestring + " is sub string of the first string provided: " +input_text_string)
+print (Tobecomaprestring + " : is sub string of : " +input_text_string)

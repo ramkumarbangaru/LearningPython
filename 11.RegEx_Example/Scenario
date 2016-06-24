@@ -1,0 +1,40 @@
+commonly used reg ex patterns
+
+. - single char
+* - 0 or more char
++ - 1 or more char
+? - 0 or 1 char
+^ - starts with
+$ - ends with
+[] - group of character
+
+Commonly used reg ex functions
+
+search - search for a pattern
+group - list of matching patterns
+match - Same as search but perform only on one line : useful link : https://docs.python.org/2/library/re.html#search-vs-match
+compile - compile and store the reg ex pattern to variable
+split - splits based on reg ex delimiter
+sub - replace every match with given string
+
+
+Check following using Reg ex
+
+1) get the doller value with doller sign from below string
+
+My Car's price is $21000.25
+
+2) Get the Numbers from below string
+
+One is 1, Two is 2 and Three is 3
+
+3) Find the words starting with b or c
+
+"school python program boy bird cow teacher mother dad friend"
+
+4) Login to Linux server, read any log file and find all the words starting by 'f' and ending 'd'
+
+5) Login to Linux server, use less to log file and split the file content using any of your own defined reg ex
+
+6) Same as above use sub to replace any specific patter with "Reaplcedstring"
+
