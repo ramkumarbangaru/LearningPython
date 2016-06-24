@@ -1,7 +1,8 @@
 import paramiko
 import time
-
-
+'''
+This Function if for introducing delay until we get the output against a command sent to shell.
+'''
 def sendxcmd(shell,cmd):
     shell.send(cmd + "\n")
     while not shell.recv_ready():
@@ -15,26 +16,17 @@ ssh.connect("192.168.56.101",port=22,username='bak',password='iDirect')
 shell = ssh.invoke_shell()
 log = open("C:\\python_test\\abc.txt","w")
 sendxcmd(shell,"cd /tmp")
-# log.write(sendxcmd(shell,"ll"))
-log.write(sendxcmd(shell,"/bin/ls -ls | awk \'{print $10}\'"))
+log.write(sendxcmd(shell,"ll -ltr"))
+# log.write(sendxcmd(shell,"/bin/ls -ls | awk \'{print $10}\'"))
 shell.close()
 log.close()
 
-
 file1 = open("C:\\python_test\\abc.txt","r")
-#list1 = file1.read()
-
-# list2 = list1.decode("utf-8")
-
-#print(list1)
-
-for word in (file1.read()):
-    print (word)
-   # if line == "temp.txt":
-   #  print("TRUE")
-   #  exit()
-   # else:
-   #  print("False")
+print(file1)
+if "temp.txt" in file1.read():
+    print("TRUE")
+else:
+    print("FALSE")
 
 
-# shell.send("rm -rf test\n")
+
