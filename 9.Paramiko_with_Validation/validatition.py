@@ -23,7 +23,7 @@ log.close()
 
 file1 = open("C:\\python_test\\abc.txt","r")
 #print(file1)
-if "temp.txt" in file1.read():
+if "temp.txt" in file1.read():  # in case we used onle file1 instead of file1.read(), its reading just the first line not whole file
     print("TRUE")
 else:
     print("FALSE")
