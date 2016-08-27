@@ -22,7 +22,6 @@ if s == str:
 else:
     print("Invalid string:")
 
-#test
 
 
 
